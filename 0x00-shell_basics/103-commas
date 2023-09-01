@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1p | awk 'BEGIN{ORS=", ";} {print}' | sed 's/, $/\n/'
+( ls -Ap | awk 'BEGIN{ORS=", "} NR > 2 {print}' | sed 's/, $/\n/'; echo "" )
