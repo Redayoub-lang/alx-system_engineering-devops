@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -A1p | awk 'BEGIN{ORS=", ";} {print}' | sed 's/, $/\n/'
+
