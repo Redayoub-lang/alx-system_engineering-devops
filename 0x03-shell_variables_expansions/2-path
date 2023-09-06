@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $PATH | tr ':' '\n' | wc -l
+
+# Add /action to the PATH environment variable
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/action"
