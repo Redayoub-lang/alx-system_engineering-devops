@@ -1,2 +1,9 @@
 #!/bin/bash
-rev
+
+# Read input from stdin
+while IFS= read -r line; do
+  # Use tr to remove both 'c' and 'C'
+  cleaned_line=$(echo "$line" | tr -d 'cC')
+  # Print the cleaned line
+  echo "$cleaned_line"
+done
