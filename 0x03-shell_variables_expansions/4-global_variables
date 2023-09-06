@@ -1,4 +1,2 @@
 #!/bin/bash
-
-# Use the env command to list environment variables
-env
+printenv
